@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		731CB05819FC235F00525D9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB05719FC235F00525D9D /* main.m */; };
+		731CB05B19FC235F00525D9D /* ILAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB05A19FC235F00525D9D /* ILAppDelegate.m */; };
+		731CB07D19FC2AF600525D9D /* ILMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB07C19FC2AF600525D9D /* ILMainViewController.m */; };
+		731CB08119FC317200525D9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731CB08019FC317200525D9D /* Images.xcassets */; };
+		731CB08419FC350D00525D9D /* ILFullscreenScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB08319FC350D00525D9D /* ILFullscreenScrollView.m */; };
+		731CB08719FC361600525D9D /* ILRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB08619FC361600525D9D /* ILRotationViewController.m */; };
+		731CB08A19FC3F3E00525D9D /* ILRotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB08919FC3F3E00525D9D /* ILRotationView.m */; };
+		731CB08D19FC417700525D9D /* ILRotationIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB08C19FC417700525D9D /* ILRotationIndicatorView.m */; };
+		731CB09019FC422A00525D9D /* ILRadialLinesLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB08F19FC422A00525D9D /* ILRadialLinesLayer.m */; };
+		731CB09319FC427200525D9D /* ILBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 731CB09219FC427200525D9D /* ILBase.m */; };
+		73887B9719FC53E6002DB1FD /* ILRotationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 73887B9619FC53E6002DB1FD /* ILRotationTracker.m */; };
+		73887B9919FC8E07002DB1FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73887B9819FC8E07002DB1FD /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		731CB05219FC235F00525D9D /* iLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		731CB05619FC235F00525D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731CB05719FC235F00525D9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		731CB05919FC235F00525D9D /* ILAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILAppDelegate.h; sourceTree = "<group>"; };
+		731CB05A19FC235F00525D9D /* ILAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILAppDelegate.m; sourceTree = "<group>"; };
+		731CB07B19FC2AF600525D9D /* ILMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILMainViewController.h; sourceTree = "<group>"; };
+		731CB07C19FC2AF600525D9D /* ILMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILMainViewController.m; sourceTree = "<group>"; };
+		731CB08019FC317200525D9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		731CB08219FC350D00525D9D /* ILFullscreenScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILFullscreenScrollView.h; sourceTree = "<group>"; };
+		731CB08319FC350D00525D9D /* ILFullscreenScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILFullscreenScrollView.m; sourceTree = "<group>"; };
+		731CB08519FC361600525D9D /* ILRotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILRotationViewController.h; sourceTree = "<group>"; };
+		731CB08619FC361600525D9D /* ILRotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILRotationViewController.m; sourceTree = "<group>"; };
+		731CB08819FC3F3E00525D9D /* ILRotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILRotationView.h; sourceTree = "<group>"; };
+		731CB08919FC3F3E00525D9D /* ILRotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILRotationView.m; sourceTree = "<group>"; };
+		731CB08B19FC417700525D9D /* ILRotationIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILRotationIndicatorView.h; sourceTree = "<group>"; };
+		731CB08C19FC417700525D9D /* ILRotationIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILRotationIndicatorView.m; sourceTree = "<group>"; };
+		731CB08E19FC422A00525D9D /* ILRadialLinesLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILRadialLinesLayer.h; sourceTree = "<group>"; };
+		731CB08F19FC422A00525D9D /* ILRadialLinesLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILRadialLinesLayer.m; sourceTree = "<group>"; };
+		731CB09119FC427200525D9D /* ILBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILBase.h; sourceTree = "<group>"; };
+		731CB09219FC427200525D9D /* ILBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILBase.m; sourceTree = "<group>"; };
+		73887B9519FC53E6002DB1FD /* ILRotationTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILRotationTracker.h; sourceTree = "<group>"; };
+		73887B9619FC53E6002DB1FD /* ILRotationTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILRotationTracker.m; sourceTree = "<group>"; };
+		73887B9819FC8E07002DB1FD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		731CB04F19FC235F00525D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		731CB04919FC235E00525D9D = {
+			isa = PBXGroup;
+			children = (
+				73887B9A19FCB2D0002DB1FD /* Sources */,
+				73887BA219FCB358002DB1FD /* Resources */,
+				731CB05319FC235F00525D9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		731CB05319FC235F00525D9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				731CB05219FC235F00525D9D /* iLamp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73887B9A19FCB2D0002DB1FD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				73887B9B19FCB2EA002DB1FD /* Main */,
+				73887B9D19FCB317002DB1FD /* Application */,
+				73887B9C19FCB2F4002DB1FD /* Base */,
+				73887B9F19FCB330002DB1FD /* ViewControllers */,
+				73887BA019FCB33A002DB1FD /* Views */,
+				73887BA119FCB344002DB1FD /* Layers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		73887B9B19FCB2EA002DB1FD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				731CB05719FC235F00525D9D /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		73887B9C19FCB2F4002DB1FD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				731CB09119FC427200525D9D /* ILBase.h */,
+				731CB09219FC427200525D9D /* ILBase.m */,
+				73887B9519FC53E6002DB1FD /* ILRotationTracker.h */,
+				73887B9619FC53E6002DB1FD /* ILRotationTracker.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		73887B9D19FCB317002DB1FD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				731CB05919FC235F00525D9D /* ILAppDelegate.h */,
+				731CB05A19FC235F00525D9D /* ILAppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		73887B9F19FCB330002DB1FD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				731CB07B19FC2AF600525D9D /* ILMainViewController.h */,
+				731CB07C19FC2AF600525D9D /* ILMainViewController.m */,
+				731CB08519FC361600525D9D /* ILRotationViewController.h */,
+				731CB08619FC361600525D9D /* ILRotationViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		73887BA019FCB33A002DB1FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				731CB08219FC350D00525D9D /* ILFullscreenScrollView.h */,
+				731CB08319FC350D00525D9D /* ILFullscreenScrollView.m */,
+				731CB08819FC3F3E00525D9D /* ILRotationView.h */,
+				731CB08919FC3F3E00525D9D /* ILRotationView.m */,
+				731CB08B19FC417700525D9D /* ILRotationIndicatorView.h */,
+				731CB08C19FC417700525D9D /* ILRotationIndicatorView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73887BA119FCB344002DB1FD /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				731CB08E19FC422A00525D9D /* ILRadialLinesLayer.h */,
+				731CB08F19FC422A00525D9D /* ILRadialLinesLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		73887BA219FCB358002DB1FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73887BA319FCB369002DB1FD /* Application */,
+				73887BA419FCB382002DB1FD /* InfoPlists */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73887BA319FCB369002DB1FD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				73887B9819FC8E07002DB1FD /* Localizable.strings */,
+				731CB08019FC317200525D9D /* Images.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		73887BA419FCB382002DB1FD /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				731CB05619FC235F00525D9D /* Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		731CB05119FC235F00525D9D /* iLamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 731CB07519FC235F00525D9D /* Build configuration list for PBXNativeTarget "iLamp" */;
+			buildPhases = (
+				731CB04E19FC235F00525D9D /* Sources */,
+				731CB04F19FC235F00525D9D /* Frameworks */,
+				731CB05019FC235F00525D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iLamp;
+			productName = iLamp;
+			productReference = 731CB05219FC235F00525D9D /* iLamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		731CB04A19FC235E00525D9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Dmitriy Dmitriev";
+				TargetAttributes = {
+					731CB05119FC235F00525D9D = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 731CB04D19FC235F00525D9D /* Build configuration list for PBXProject "iLamp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 731CB04919FC235E00525D9D;
+			productRefGroup = 731CB05319FC235F00525D9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				731CB05119FC235F00525D9D /* iLamp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		731CB05019FC235F00525D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731CB08119FC317200525D9D /* Images.xcassets in Resources */,
+				73887B9919FC8E07002DB1FD /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		731CB04E19FC235F00525D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731CB07D19FC2AF600525D9D /* ILMainViewController.m in Sources */,
+				731CB08419FC350D00525D9D /* ILFullscreenScrollView.m in Sources */,
+				731CB05B19FC235F00525D9D /* ILAppDelegate.m in Sources */,
+				731CB08719FC361600525D9D /* ILRotationViewController.m in Sources */,
+				731CB09319FC427200525D9D /* ILBase.m in Sources */,
+				731CB08D19FC417700525D9D /* ILRotationIndicatorView.m in Sources */,
+				731CB09019FC422A00525D9D /* ILRadialLinesLayer.m in Sources */,
+				731CB05819FC235F00525D9D /* main.m in Sources */,
+				73887B9719FC53E6002DB1FD /* ILRotationTracker.m in Sources */,
+				731CB08A19FC3F3E00525D9D /* ILRotationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		731CB07319FC235F00525D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		731CB07419FC235F00525D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		731CB07619FC235F00525D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = Resources/InfoPlists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		731CB07719FC235F00525D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = Resources/InfoPlists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		731CB04D19FC235F00525D9D /* Build configuration list for PBXProject "iLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731CB07319FC235F00525D9D /* Debug */,
+				731CB07419FC235F00525D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		731CB07519FC235F00525D9D /* Build configuration list for PBXNativeTarget "iLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731CB07619FC235F00525D9D /* Debug */,
+				731CB07719FC235F00525D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 731CB04A19FC235E00525D9D /* Project object */;
+}
