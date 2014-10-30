@@ -23,7 +23,7 @@
     UIScrollView* _scrollView;
 }
 
-@property (retain, nonatomic) NSArray* swipeItems;
+@property (retain, nonatomic, setter=setSwipeItems:) NSArray* swipeItems;
 @property (readonly, nonatomic) UIScrollView* scrollView;
 
 @end

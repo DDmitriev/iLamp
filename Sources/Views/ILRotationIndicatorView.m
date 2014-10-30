@@ -15,6 +15,9 @@
 /*********        forward declarations, globals and typedefs        *********/
 
 CGFloat const ILCircleRadius = 80.;
+NSString* const ILPulsationAnimationKey = @"ILPulsationAnimation";
+NSString* const ILRotationAnimationKey = @"ILRotationAnimation";
+NSString* const ILRotationFadeInAnimationKey = @"ILRotationFadeInAnimation";
 
 /*********        private interface for ILRotationIndicatorView        *********/
 
@@ -164,12 +167,12 @@ CGFloat const ILCircleRadius = 80.;
 
 - (void)setDistanceBetweenCircleCenters:(CGFloat)distanceBetweenCircleCenters withTitleText:(NSString*)text;
 {
-    if ([_topCircleLayer.animationKeys containsObject:@"pulsation"])
+    if ([_topCircleLayer.animationKeys containsObject:ILPulsationAnimationKey])
     {
         [self _stopWatingAnimation];
     }
 
-    if (![_topCircleLayer.animationKeys containsObject:@"pulsation"] && !([_linesLayer.animationKeys containsObject:@"rotationFadeIn"] || [_linesLayer.animationKeys containsObject:@"rotation"]) )
+    if (![_topCircleLayer.animationKeys containsObject:ILPulsationAnimationKey] && !([_linesLayer.animationKeys containsObject:ILRotationFadeInAnimationKey] || [_linesLayer.animationKeys containsObject:ILRotationAnimationKey]) )
     {
         [self _applyRotationAnimation];
     }
@@ -208,7 +211,7 @@ CGFloat const ILCircleRadius = 80.;
 
 - (void)startWaitingAnimations
 {
-    if (![_topCircleLayer.animationKeys containsObject:@"pulsation"])
+    if (![_topCircleLayer.animationKeys containsObject:ILPulsationAnimationKey])
     {
         _degreeLabel.hidden = YES;
 
@@ -253,16 +256,16 @@ CGFloat const ILCircleRadius = 80.;
     animation.repeatCount = HUGE_VALF;
     animation.autoreverses = YES;
     animation.fillMode = kCAFillModeForwards;
-    [_topCircleForegroundLayer addAnimation:animation forKey:@"pulsation"];
-    [_topCircleLayer addAnimation:animation forKey:@"pulsation"];
-    [_topCircleBackgroundLayer addAnimation:animation forKey:@"pulsation"];
+    [_topCircleForegroundLayer addAnimation:animation forKey:ILPulsationAnimationKey];
+    [_topCircleLayer addAnimation:animation forKey:ILPulsationAnimationKey];
+    [_topCircleBackgroundLayer addAnimation:animation forKey:ILPulsationAnimationKey];
 }
 
 - (void)_stopWatingAnimation
 {
-    [_topCircleForegroundLayer removeAnimationForKey:@"pulsation"];
-    [_topCircleLayer removeAnimationForKey:@"pulsation"];
-    [_topCircleBackgroundLayer removeAnimationForKey:@"pulsation"];
+    [_topCircleForegroundLayer removeAnimationForKey:ILPulsationAnimationKey];
+    [_topCircleLayer removeAnimationForKey:ILPulsationAnimationKey];
+    [_topCircleBackgroundLayer removeAnimationForKey:ILPulsationAnimationKey];
 }
 
 - (void)_applyRotationAnimation
@@ -274,13 +277,13 @@ CGFloat const ILCircleRadius = 80.;
     rotationAnimation.duration = 0.75;
     rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     rotationAnimation.delegate = self;
-    [_linesLayer addAnimation:rotationAnimation forKey:@"rotationFadeIn"];
+    [_linesLayer addAnimation:rotationAnimation forKey:ILRotationFadeInAnimationKey];
 }
 
 - (void)_stopRotationAnimation
 {
-    [_linesLayer removeAnimationForKey:@"rotationFadeIn"];
-    [_linesLayer removeAnimationForKey:@"rotation"];
+    [_linesLayer removeAnimationForKey:ILRotationFadeInAnimationKey];
+    [_linesLayer removeAnimationForKey:ILRotationAnimationKey];
 }
 
 - (CGRect)_leftRectForDistance:(CGFloat)distance
@@ -379,7 +382,7 @@ CGFloat const ILCircleRadius = 80.;
     rotationAnimation.toValue = [NSNumber numberWithFloat:((360. * M_PI) / 180.)];
     rotationAnimation.duration = 6.;
     rotationAnimation.repeatCount = HUGE_VALF;
-    [_linesLayer addAnimation:rotationAnimation forKey:@"rotation"];
+    [_linesLayer addAnimation:rotationAnimation forKey:ILRotationAnimationKey];
 }
 
 @end
