@@ -84,10 +84,10 @@ NSTimeInterval const ILMotionUpdateInterval =  0.1;
             if (error)
                 return;
 
-            if (self->_refAttitude == nil)
-                self->_refAttitude = [motion.attitude copy];
+            if (weakSelf->_refAttitude == nil)
+                weakSelf->_refAttitude = [motion.attitude copy];
 
-            [motion.attitude multiplyByInverseOfAttitude:self->_refAttitude];
+            [motion.attitude multiplyByInverseOfAttitude:weakSelf->_refAttitude];
 
             [weakSelf _handleRotationForRoll:motion.attitude.roll];
         }];

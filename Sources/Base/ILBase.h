@@ -16,7 +16,7 @@
  @discussion Base utilities class for the application.
 */
 
-@interface ILBase : UIView
+@interface ILBase : NSObject
 
 + (UIFont*)thinFontOfSize:(CGFloat)size;
 
